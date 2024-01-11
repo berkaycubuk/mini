@@ -1,6 +1,13 @@
-<form>
+<form action="/login" method="POST">
 	<label>E-mail</label>
-	<input type="email" />
+	<input name="email" type="email" value="<%= email %>" />
+	<% if (errors.email != null){ %>
+		<small><%= errors.email %></small>
+	<% } %>
 	<label>Password</label>
-	<input type="password" />
+	<input name="password" type="password" />
+	<% if (errors.password != null){ %>
+		<small><%= errors.password %></small>
+	<% } %>
+	<button>Login</button>
 </form>
