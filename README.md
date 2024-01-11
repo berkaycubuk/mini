@@ -1,4 +1,4 @@
-# Mini
+# Mini (Work in progress)
 Mini is a web based e-course publishing program. With Mini you can sell your video courses without relying on third-party course sharing platforms.
 
 ## Technology
