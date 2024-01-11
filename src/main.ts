@@ -1,14 +1,8 @@
-import {IncomingMessage, ServerResponse, createServer} from 'http'
+import { init_server } from './server'
+import 'dotenv/config'
 
-const host: string = 'localhost'
-const port: number = 4000
+const host: string = process.env.HOST ? process.env.HOST : "localhost"
+const port: number = process.env.PORT ? parseInt(process.env.PORT) : 4000
 
-const requestListener = (req: IncomingMessage, res: ServerResponse) => {
-		res.writeHead(200)
-		res.end("hello!")
-}
-
-const server = createServer(requestListener)
-server.listen(port, host, () => {
-		console.log(`Server is running on http://${host}:${port}`)
-})
+// start server
+init_server(host, port)
