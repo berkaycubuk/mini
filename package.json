@@ -1,0 +1,19 @@
+{
+  "name": "mini",
+  "version": "1.0.0",
+  "description": "Minimal web based course sharing tool",
+  "main": "src/main.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/main.js",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.3"
+  }
+}
